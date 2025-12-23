@@ -3,10 +3,11 @@ public class tester {
 
     public static void main(String[] args) {
 
-        threeToEight myDecode = new threeToEight();
+        eightToThree myEncoder = new eightToThree();
+        myEncoder.setOctal();
 
-        myDecode.setBinary();
-        System.out.println("Binary : " + myDecode.getBinary());
-        System.out.println("Octal : " + myDecode.decoder(myDecode.getBinary()));
+        System.out.println("Octal : " + myEncoder.getOctal());
+        System.out.println("Binary : " + myEncoder.encoder(myEncoder.getOctal()));
+
     }
 }
